@@ -4,10 +4,10 @@
     android:id="@+id/prefs_switch_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:baselineAligned="false"
     android:background="?android:attr/selectableItemBackground"
     android:gravity="center_vertical"
-    android:minHeight="?android:attr/listPreferredItemHeight"
-    android:orientation="horizontal">
+    android:minHeight="?android:attr/listPreferredItemHeight">
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -37,7 +37,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/prefs_switch_title"
             android:layout_alignStart="@+id/prefs_switch_title"
-            android:layout_alignLeft="@+id/prefs_switch_title"
             android:maxLines="4"
             android:textAppearance="?android:attr/textAppearanceListItemSecondary"
             android:textColor="?android:attr/textColorSecondary"
@@ -48,7 +47,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
         android:gravity="end|center_vertical"
         android:orientation="vertical">
 

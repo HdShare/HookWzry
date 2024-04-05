@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">HookWzry</string>
 
-    <string name="prefs">配置</string>
+    <string name="print_log_key">PrintLog</string>
+    <string name="print_log_title">输出日志</string>
+    <string name="print_log_summary">输出日志</string>
 
     <string name="map_location_key">MapLocation</string>
     <string name="map_location_title">战区位置</string>
