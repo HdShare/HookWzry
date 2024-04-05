@@ -25,9 +25,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defVal="true"
-            app:key="@string/location_key"
-            app:summary="@string/location_summary"
-            app:title="@string/location_title" />
+            app:key="@string/map_location_key"
+            app:summary="@string/map_location_summary"
+            app:title="@string/map_location_title" />
+
+        <me.hd.hookwzry.ui.prefs.SwitchPrefs
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defVal="true"
+            app:key="@string/real_name_key"
+            app:summary="@string/real_name_summary"
+            app:title="@string/real_name_title" />
     </LinearLayout>
 
 </LinearLayout>

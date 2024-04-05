@@ -3,8 +3,12 @@
 
     <string name="prefs">配置</string>
 
-    <string name="location_key">location</string>
-    <string name="location_title">位置</string>
-    <string name="location_summary">王者战区位置</string>
+    <string name="map_location_key">MapLocation</string>
+    <string name="map_location_title">战区位置</string>
+    <string name="map_location_summary">战区位置</string>
+
+    <string name="real_name_key">RealName</string>
+    <string name="real_name_title">实名认证</string>
+    <string name="real_name_summary">实名认证</string>
 
 </resources>

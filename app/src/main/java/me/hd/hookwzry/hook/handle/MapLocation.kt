@@ -2,19 +2,19 @@ package me.hd.hookwzry.hook.handle
 
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XSharedPreferences
-import de.robv.android.xposed.XposedHelpers
+import de.robv.android.xposed.XposedHelpers.findAndHookMethod
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 import me.hd.hookwzry.utils.LogUtil
 
-object Location {
+object MapLocation {
     private fun getMethodParam(latitude: Double, longtitude: Double): String {
         return """{"callbackTag":1"code":0,"desc":"success","errorCode":0,"fakeType":0,"latitude":"$latitude","longtitude":"$longtitude","nation":"null","province":"null","city":"null","district":"null"}"""
     }
 
     fun handle(prefs: XSharedPreferences, lpparam: XC_LoadPackage.LoadPackageParam) {
-        if (prefs.getBoolean("location", true)) {
-            LogUtil.logLsp("Location is enabled")
-            XposedHelpers.findAndHookMethod(
+        if (prefs.getBoolean("MapLocation", true)) {
+            LogUtil.logLsp("MapLocation is enabled")
+            findAndHookMethod(
                 "com.unity3d.player.UnityPlayer",
                 lpparam.classLoader,
                 "UnitySendMessage",
@@ -28,13 +28,13 @@ object Location {
                         if (gameObject == "MapService" && methodName == "OnGetMapLocation") {
                             val methodParam = getMethodParam(22.160511, 113.586097)
                             param.args[2] = methodParam
-                            LogUtil.logLsp("Location is hooked")
+                            LogUtil.logLsp("MapLocation is hooked")
                         }
                     }
                 }
             )
         } else {
-            LogUtil.logLsp("Location is disabled")
+            LogUtil.logLsp("MapLocation is disabled")
         }
     }
 }
