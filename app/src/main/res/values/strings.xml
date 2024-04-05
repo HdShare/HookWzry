@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HookWzry</string>
+
+    <string name="prefs">配置</string>
+
+    <string name="location_key">location</string>
+    <string name="location_title">位置</string>
+    <string name="location_summary">王者战区位置</string>
+
+</resources>
