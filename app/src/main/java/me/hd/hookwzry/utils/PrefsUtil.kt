@@ -8,7 +8,10 @@ object PrefsUtil {
 
     private fun getPrefs(context: Context): SharedPreferences {
         if (prefs == null) {
-            prefs = context.getSharedPreferences(context.packageName, Context.MODE_WORLD_READABLE)
+            prefs = context.getSharedPreferences(
+                context.packageName + "_preferences",
+                Context.MODE_WORLD_READABLE
+            )
         }
         return prefs!!
     }

@@ -8,7 +8,7 @@ import me.hd.hookwzry.hook.handle.MapLocation
 import me.hd.hookwzry.hook.handle.RealName
 
 class HookEntry : IXposedHookLoadPackage {
-    private val prefs = XSharedPreferences(BuildConfig.APPLICATION_ID, "")
+    private val prefs = XSharedPreferences(BuildConfig.APPLICATION_ID)
 
     override fun handleLoadPackage(lpparam: XC_LoadPackage.LoadPackageParam) {
         when (lpparam.packageName) {
