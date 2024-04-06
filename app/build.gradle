@@ -1,6 +1,19 @@
+import com.github.megatronking.stringfog.plugin.StringFogMode
+import com.github.megatronking.stringfog.plugin.kg.RandomKeyGenerator
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'stringfog'
+}
+
+stringfog {
+    implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
+    packageName 'me.hd.hookwzry'
+    enable true
+    fogPackages = ['me.hd.hookwzry']
+    kg new RandomKeyGenerator(256)
+    mode StringFogMode.bytes
 }
 
 android {
@@ -42,4 +55,5 @@ dependencies {
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.preference:preference-ktx:1.2.1'
     compileOnly 'de.robv.android.xposed:api:82'
+    implementation 'com.github.megatronking.stringfog:xor:5.0.0'
 }
