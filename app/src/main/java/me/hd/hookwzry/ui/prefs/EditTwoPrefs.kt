@@ -8,7 +8,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import me.hd.hookwzry.R
 import me.hd.hookwzry.databinding.PrefsDialogEditTwoBinding
 import me.hd.hookwzry.databinding.PrefsEditTwoBinding
-import me.hd.hookwzry.ui.utils.PrefsUtil
+import me.hd.hookwzry.ui.utils.Prefs
 
 class EditTwoPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
     init {
@@ -28,26 +28,26 @@ class EditTwoPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context
         summary?.let { binding.prefsEditSummary.text = it }
         key1?.let {
             val defVal = defValStr1?.toFloat() ?: 0.00000f
-            val value = PrefsUtil.getVal(context, it, defVal) as Float
-            PrefsUtil.putVal(context, it, value)
+            val value = Prefs.getVal(context, it, defVal) as Float
+            Prefs.putVal(context, it, value)
         }
         key2?.let {
             val defVal = defValStr2?.toFloat() ?: 0.00000f
-            val value = PrefsUtil.getVal(context, it, defVal) as Float
-            PrefsUtil.putVal(context, it, value)
+            val value = Prefs.getVal(context, it, defVal) as Float
+            Prefs.putVal(context, it, value)
         }
         binding.prefsEditView.setOnClickListener {
             val dialogBinding = PrefsDialogEditTwoBinding.inflate(LayoutInflater.from(context))
             dialogBinding.prefsDialogEditTwoLayout1.hint = hint1
             key1?.let {
                 val defVal = defValStr1?.toFloat() ?: 0.00000f
-                val defEdt1 = PrefsUtil.getVal(context, key1, defVal) as Float
+                val defEdt1 = Prefs.getVal(context, key1, defVal) as Float
                 dialogBinding.prefsDialogEditTwoEdt1.setText(defEdt1.toString())
             }
             dialogBinding.prefsDialogEditTwoLayout2.hint = hint2
             key2?.let {
                 val defVal = defValStr2?.toFloat() ?: 0.00000f
-                val defEdt2 = PrefsUtil.getVal(context, key2, defVal) as Float
+                val defEdt2 = Prefs.getVal(context, key2, defVal) as Float
                 dialogBinding.prefsDialogEditTwoEdt2.setText(defEdt2.toString())
             }
             MaterialAlertDialogBuilder(context)
@@ -57,8 +57,8 @@ class EditTwoPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context
                     val edt1 = dialogBinding.prefsDialogEditTwoEdt1.text.toString()
                     val edt2 = dialogBinding.prefsDialogEditTwoEdt2.text.toString()
                     if (edt1.isNotEmpty() && edt2.isNotEmpty()) {
-                        key1?.let { PrefsUtil.putVal(context, it, edt1.toFloat()) }
-                        key2?.let { PrefsUtil.putVal(context, it, edt2.toFloat()) }
+                        key1?.let { Prefs.putVal(context, it, edt1.toFloat()) }
+                        key2?.let { Prefs.putVal(context, it, edt2.toFloat()) }
                     }
                 }
                 .setNegativeButton("Decline") { _, _ -> }

@@ -13,4 +13,4 @@
 #允许多个字段和方法相同名称,只是参数和返回类型不同
 -overloadaggressively
 #重新包装所有已重命名的类文件,移动到给定的单一包中
--repackageclasses 'android.app'
+-repackageclasses 'android.core'

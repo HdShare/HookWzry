@@ -3,7 +3,7 @@ package me.hd.hookwzry.ui.utils
 import android.content.Context
 import android.content.SharedPreferences
 
-object PrefsUtil {
+object Prefs {
     private var prefs: SharedPreferences? = null
 
     private fun getPrefs(context: Context): SharedPreferences {
