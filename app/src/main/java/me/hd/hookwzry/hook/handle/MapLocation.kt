@@ -9,8 +9,8 @@ import me.hd.hookwzry.hook.utils.HdLog
 import me.hd.hookwzry.hook.utils.HdLog.Status
 
 class MapLocation {
-    private fun getMethodParam(latitude: Double, longtitude: Double): String {
-        return """{"callbackTag":1"code":0,"desc":"success","errorCode":0,"fakeType":0,"latitude":"$latitude","longtitude":"$longtitude","nation":"null","province":"null","city":"null","district":"null"}"""
+    private fun getMethodParam(longitude: Float, latitude: Float): String {
+        return """{"callbackTag":1"code":0,"desc":"success","errorCode":0,"fakeType":0,"latitude":"$latitude","longtitude":"$longitude","nation":"null","province":"null","city":"null","district":"null"}"""
     }
 
     fun handle(prefs: XSharedPreferences, lpparam: XC_LoadPackage.LoadPackageParam) {
@@ -28,9 +28,15 @@ class MapLocation {
                         val gameObject = param.args[0] as String
                         val methodName = param.args[1] as String
                         if (gameObject == "MapService" && methodName == "OnGetMapLocation") {
-                            val methodParam = getMethodParam(22.160511, 113.586097)
-                            param.args[2] = methodParam
-                            HdLog.printState(ConstData.MAP_LOCATION, Status.HOOKED)
+                            val longitude = prefs.getFloat(ConstData.LONGITUDE, 0.00000f)
+                            val latitude = prefs.getFloat(ConstData.LATITUDE, 0.00000f)
+                            if (longitude != 0.00000f && latitude != 0.00000f) {
+                                val methodParam = getMethodParam(longitude, latitude)
+                                param.args[2] = methodParam
+                                HdLog.printState(ConstData.MAP_LOCATION, Status.HOOKED)
+                            } else {
+                                HdLog.printState(ConstData.MAP_LOCATION, Status.EXCEPTION)
+                            }
                         }
                     }
                 }

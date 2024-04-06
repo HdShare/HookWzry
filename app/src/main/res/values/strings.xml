@@ -2,12 +2,21 @@
     <string name="app_name">HookWzry</string>
 
     <string name="print_log_key">PrintLog</string>
-    <string name="print_log_title">输出日志</string>
-    <string name="print_log_summary">输出日志</string>
+    <string name="print_log_title">输出日志(暂无无用)</string>
+    <string name="print_log_summary">输出日志(暂无无用)</string>
 
     <string name="map_location_key">MapLocation</string>
     <string name="map_location_title">战区位置</string>
     <string name="map_location_summary">战区位置</string>
+
+    <string name="long_lat_key1">Longitude</string>
+    <string name="long_lat_hint1">经度</string>
+    <string name="long_lat_def_val1">116.39773</string>
+    <string name="long_lat_key2">Latitude</string>
+    <string name="long_lat_hint2">纬度</string>
+    <string name="long_lat_def_val2">39.90307</string>
+    <string name="long_lat_title">经度纬度</string>
+    <string name="long_lat_summary">经度纬度</string>
 
     <string name="real_name_key">RealName</string>
     <string name="real_name_title">实名认证</string>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prefs_edit_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/prefs_edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="?android:attr/textColorPrimary"
+            tools:text="prefs_title" />
+
+        <TextView
+            android:id="@+id/prefs_edit_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prefs_edit_title"
+            android:layout_alignStart="@+id/prefs_edit_title"
+            android:maxLines="4"
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="prefs_summary" />
+    </RelativeLayout>
+
+</LinearLayout>

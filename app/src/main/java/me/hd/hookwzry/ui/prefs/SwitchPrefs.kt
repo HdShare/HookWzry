@@ -10,12 +10,12 @@ import me.hd.hookwzry.ui.utils.PrefsUtil
 
 class SwitchPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
     init {
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.SwitchPrefs)
-        val key = typedArray.getString(R.styleable.SwitchPrefs_key)
-        val defValStr = typedArray.getString(R.styleable.SwitchPrefs_defVal)
-        val title = typedArray.getString(R.styleable.SwitchPrefs_title)
-        val summary = typedArray.getString(R.styleable.SwitchPrefs_summary)
-        typedArray.recycle()
+        val attributes = context.obtainStyledAttributes(attrs, R.styleable.SwitchPrefs)
+        val title = attributes.getString(R.styleable.SwitchPrefs_title)
+        val summary = attributes.getString(R.styleable.SwitchPrefs_summary)
+        val key = attributes.getString(R.styleable.SwitchPrefs_key)
+        val defValStr = attributes.getString(R.styleable.SwitchPrefs_defVal)
+        attributes.recycle()
 
         val binding = PrefsSwitchBinding.inflate(LayoutInflater.from(context), this, true)
         title?.let { binding.prefsSwitchTitle.text = it }

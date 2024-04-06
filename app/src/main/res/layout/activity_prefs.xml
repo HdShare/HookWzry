@@ -19,7 +19,6 @@
     <me.hd.hookwzry.ui.prefs.GroupPrefs
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:title="@string/print_log_title">
 
         <me.hd.hookwzry.ui.prefs.SwitchPrefs
@@ -34,7 +33,6 @@
     <me.hd.hookwzry.ui.prefs.GroupPrefs
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:title="@string/map_location_title">
 
         <me.hd.hookwzry.ui.prefs.SwitchPrefs
@@ -44,12 +42,23 @@
             app:key="@string/map_location_key"
             app:summary="@string/map_location_summary"
             app:title="@string/map_location_title" />
+
+        <me.hd.hookwzry.ui.prefs.EditTwoPrefs
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:defVal1="@string/long_lat_def_val1"
+            app:defVal2="@string/long_lat_def_val2"
+            app:hint1="@string/long_lat_hint1"
+            app:hint2="@string/long_lat_hint2"
+            app:key1="@string/long_lat_key1"
+            app:key2="@string/long_lat_key2"
+            app:summary="@string/long_lat_summary"
+            app:title="@string/long_lat_title" />
     </me.hd.hookwzry.ui.prefs.GroupPrefs>
 
     <me.hd.hookwzry.ui.prefs.GroupPrefs
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:title="@string/real_name_title">
 
         <me.hd.hookwzry.ui.prefs.SwitchPrefs

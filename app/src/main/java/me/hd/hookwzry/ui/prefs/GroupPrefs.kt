@@ -9,9 +9,11 @@ import me.hd.hookwzry.databinding.PrefsGroupBinding
 
 class GroupPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
     init {
-        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.GroupPrefs)
-        val title = typedArray.getString(R.styleable.GroupPrefs_title)
-        typedArray.recycle()
+        orientation = VERTICAL
+
+        val attributes = context.obtainStyledAttributes(attrs, R.styleable.GroupPrefs)
+        val title = attributes.getString(R.styleable.GroupPrefs_title)
+        attributes.recycle()
 
         val binding = PrefsGroupBinding.inflate(LayoutInflater.from(context), this, true)
         title?.let { binding.prefsGroupTitle.text = it }

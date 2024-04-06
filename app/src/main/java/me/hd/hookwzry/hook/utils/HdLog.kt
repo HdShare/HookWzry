@@ -5,7 +5,10 @@ import me.hd.hookwzry.BuildConfig
 
 object HdLog {
     enum class Status {
-        ENABLED, DISABLED, HOOKED
+        ENABLED,
+        DISABLED,
+        HOOKED,
+        EXCEPTION,
     }
 
     fun print(msg: String) {
@@ -18,6 +21,7 @@ object HdLog {
             Status.ENABLED -> print("$name is enabled")
             Status.DISABLED -> print("$name is disabled")
             Status.HOOKED -> print("$name is hooked")
+            Status.EXCEPTION -> print("$name has exception")
         }
     }
 
