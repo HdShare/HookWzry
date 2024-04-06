@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.widget.LinearLayout
 import me.hd.hookwzry.R
 import me.hd.hookwzry.databinding.PrefsSwitchBinding
-import me.hd.hookwzry.utils.PrefsUtil
+import me.hd.hookwzry.ui.utils.PrefsUtil
 
 class SwitchPrefs(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
     init {

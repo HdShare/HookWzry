@@ -4,8 +4,8 @@
     android:id="@+id/prefs_switch_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:baselineAligned="false"
     android:background="?android:attr/selectableItemBackground"
+    android:baselineAligned="false"
     android:gravity="center_vertical"
     android:minHeight="?android:attr/listPreferredItemHeight">
 

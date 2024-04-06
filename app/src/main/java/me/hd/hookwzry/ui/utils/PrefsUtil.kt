@@ -1,4 +1,4 @@
-package me.hd.hookwzry.utils
+package me.hd.hookwzry.ui.utils
 
 import android.content.Context
 import android.content.SharedPreferences

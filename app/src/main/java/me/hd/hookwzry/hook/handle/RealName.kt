@@ -5,12 +5,14 @@ import de.robv.android.xposed.XSharedPreferences
 import de.robv.android.xposed.XposedHelpers.callMethod
 import de.robv.android.xposed.XposedHelpers.findAndHookMethod
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import me.hd.hookwzry.utils.LogUtil
+import me.hd.hookwzry.data.ConstData
+import me.hd.hookwzry.hook.utils.HdLog
+import me.hd.hookwzry.hook.utils.HdLog.Status
 
-object RealName {
+class RealName {
     fun handle(prefs: XSharedPreferences, lpparam: XC_LoadPackage.LoadPackageParam) {
-        if (prefs.getBoolean("RealName", true)) {
-            LogUtil.logLsp("RealName is enabled")
+        if (prefs.getBoolean(ConstData.REAL_NAME, true)) {
+            HdLog.printState(ConstData.REAL_NAME, Status.ENABLED)
             findAndHookMethod(
                 "com.tencent.msdk.realnameauth.RealNameAuthManager",
                 lpparam.classLoader,
@@ -19,12 +21,12 @@ object RealName {
                     override fun beforeHookedMethod(param: MethodHookParam) {
                         callMethod(param.thisObject, "onRealNameAuthNotify", 0, "")
                         param.result = null
-                        LogUtil.logLsp("RealName is hooked")
+                        HdLog.printState(ConstData.REAL_NAME, Status.HOOKED)
                     }
                 }
             )
         } else {
-            LogUtil.logLsp("RealName is disabled")
+            HdLog.printState(ConstData.REAL_NAME, Status.DISABLED)
         }
     }
 }

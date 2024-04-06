@@ -11,8 +11,8 @@ android {
         applicationId "me.hd.hookwzry"
         minSdk 26
         targetSdk 34
-        versionCode 20240405
-        versionName "1.0.063"
+        versionCode 20240406
+        versionName "1.0.084"
         buildConfigField 'String', 'TAG', '"HookWzry"'
     }
 
