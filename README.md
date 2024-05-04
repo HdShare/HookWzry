@@ -21,11 +21,6 @@
 </div>
 
 ---
-## 说明:
-
-[视频 Video](https://www.bilibili.com/video/BV1Mq421A7Pk)
-
----
 ## 功能:
 
 后续将依据star和download情况进一步更新与适配.
