@@ -1,35 +1,52 @@
-<div align="center">
+<p align="center">
+    <a href="https://github.com/HdShare/HookWzry">
+        <img src="https://socialify.git.ci/HdShare/HookWzry/image?description=1&font=Rokkitt&language=1&name=1&owner=1&theme=Auto" alt="socialify"/>
+    </a>
+</p>
 
-<h1>HookWzry</h1>
+<p align="center">
+    <a href="https://github.com/HdShare/HookWzry/releases">
+        <img src="https://img.shields.io/github/downloads/HdShare/HookWzry/total?style=flat-square&label=GithubRepo&labelColor=1b1f23&color=eeeeee" alt="downloads">
+    </a>
+    <a href="https://github.com/HdShare/HookWzry/stargazers">
+        <img src="https://img.shields.io/github/stars/HdShare/HookWzry?style=flat-square&label=Stars&labelColor=1b1f23&color=dfb317" alt="stars">
+    </a>
+    <a href="https://github.com/HdShare/HookWzry/network/members">
+        <img src="https://img.shields.io/github/forks/HdShare/HookWzry?style=flat-square&label=Forks&labelColor=1b1f23&color=97ca00" alt="forks">
+    </a>
+    <a href="https://github.com/HdShare/HookWzry/issues">
+        <img src="https://img.shields.io/github/issues/HdShare/HookWzry?style=flat-square&label=Issues&labelColor=1b1f23&color=007ec6" alt="issues">
+    </a>
+</p>
 
-> **HookWzry By HdShare**
+<p align="center">
+    <a href="https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/releases">
+        <img src="https://img.shields.io/github/downloads/Xposed-Modules-Repo/me.hd.hookwzry/total?style=flat-square&label=LSPosedRepo&labelColor=f48fb1&color=eeeeee" alt="downloads">
+    </a>
+    <a href="https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/stargazers">
+        <img src="https://img.shields.io/github/stars/Xposed-Modules-Repo/me.hd.hookwzry?style=flat-square&label=Stars&labelColor=f48fb1&color=dfb317" alt="stars">
+    </a>
+    <a href="https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/network/members">
+        <img src="https://img.shields.io/github/forks/Xposed-Modules-Repo/me.hd.hookwzry?style=flat-square&label=Forks&labelColor=f48fb1&color=97ca00" alt="forks">
+    </a>
+    <a href="https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/issues">
+        <img src="https://img.shields.io/github/issues/Xposed-Modules-Repo/me.hd.hookwzry?style=flat-square&label=Issues&labelColor=f48fb1&color=007ec6" alt="issues">
+    </a>
+</p>
 
-<div align="center">
-  
-  [![LSP Stars](https://img.shields.io/github/stars/Xposed-Modules-Repo/me.hd.hookwzry?label=LSP%20Stars)](https://github.com/Xposed-Modules-Repo/me.hd.hookwzry)
-  [![LSP Repo](https://img.shields.io/github/downloads/Xposed-Modules-Repo/me.hd.hookwzry/total?label=LSP%20Repo&labelColor=f48fb1)](https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/releases)
-  [![LSP Issues](https://img.shields.io/github/issues/Xposed-Modules-Repo/me.hd.hookwzry?label=LSP%20Issues)](https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/issues)
-
-  [![Source Stars](https://img.shields.io/github/stars/HdShare/HookWzry?label=Source%20Stars)](https://github.com/HdShare/HookWzry)
-  [![Source Repo](https://img.shields.io/github/downloads/HdShare/HookWzry/total?label=Source%20Repo&labelColor=1f2328)](https://github.com/HdShare/HookWzry/releases)
-  [![Source Issues](https://img.shields.io/github/issues/HdShare/HookWzry?label=Source%20Issues)](https://github.com/HdShare/HookWzry/issues)
-
-</div>
-
-[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/me.hd.hookwzry)](https://github.com/Xposed-Modules-Repo/me.hd.hookwzry/releases/latest)
-
-</div>
+<p align="center">
+    <a href="https://github.com/HdShare/HookWzry/releases/latest">
+        <img src="https://img.shields.io/github/v/release/HdShare/HookWzry?style=flat-square&label=Release&labelColor=8b00c5&color=c8c8c8" alt="release">
+    </a>
+</p>
 
 ---
+
 ## 功能:
-
-后续将依据star和download情况进一步更新与适配.
-
-We will continue to update and adapt based on the number of stars and downloads in the future.
 
 <table>
     <tr>
-        <td align="center"><b>Name</b></td>
+        <td align="center"><b>Func</b></td>
         <td align="center"><b>Status</b></td>
     </tr>
     <tr>
@@ -45,10 +62,3 @@ We will continue to update and adapt based on the number of stars and downloads 
         <td align="center">❓</td>
     </tr>
 </table>
-
----
-## 贡献:
-
-在使用过程中有任何问题或建议, 请通过issues提交.
-
-If you encounter any issues or have any suggestions during use, please submit them through issues.
